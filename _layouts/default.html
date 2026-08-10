@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ page.language | default: 'en' }}">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>
+    {% if page.title %}
+      {{ page.title }} |
+    {% endif %}
+    Building Artificial Minds
+  </title>
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+  <header class="site-header">
+
+    <a class="site-title" href="{{ '/' | relative_url }}">
+      Building Artificial Minds
+    </a>
+
+    <nav>
+      {% if page.language == "de" %}
+
+        <a href="{{ '/de/essays/' | relative_url }}">Essays</a>
+        <a href="{{ '/de/books/' | relative_url }}">Bücher</a>
+        <a href="{{ '/de/projects/' | relative_url }}">Projekte</a>
+        <a href="{{ '/de/about/' | relative_url }}">Über</a>
+
+      {% else %}
+
+        <a href="{{ '/en/essays/' | relative_url }}">Essays</a>
+        <a href="{{ '/en/books/' | relative_url }}">Books</a>
+        <a href="{{ '/en/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/en/about/' | relative_url }}">About</a>
+
+      {% endif %}
+    </nav>
+
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>Building Artificial Minds</p>
+  </footer>
+
+</body>
+
+</html>
