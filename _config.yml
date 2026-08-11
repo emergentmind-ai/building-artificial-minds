@@ -1,3 +1,7 @@
 collections:
   essays:
     output: true
+
+author: "Andrea Glende"
+copyright: "© 2026 Andrea Glende. All rights reserved."
+footer_text: "Building Artificial Minds - The Principles of Creating Intelligence"

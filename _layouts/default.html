@@ -20,9 +20,32 @@
 
   <header class="site-header">
 
-    <a class="site-title" href="{{ '/' | relative_url }}">
-      Building Artificial Minds
-    </a>
+    <div class="header-top-row">
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        Building Artificial Minds
+      </a>
+      <div class="lang-switcher">
+        {% assign current_url = page.url | replace: '/index.html', '' %}
+
+        {% if current_url == '/' %}
+          <a href="{{ '/de/' | relative_url }}">DE</a>
+          <span>/</span>
+          <a href="{{ '/en/' | relative_url }}">EN</a>
+        {% elsif current_url == '/de/' or current_url == '/de' %}
+          <a href="{{ '/en/' | relative_url }}">EN</a>
+        {% elsif current_url == '/en/' or current_url == '/en' %}
+          <a href="{{ '/de/' | relative_url }}">DE</a>
+        {% elsif page.language == 'de' %}
+          {% assign alt_path = current_url | replace_first: '/de', '' %}
+          {% assign alt_href = '/en' | append: alt_path %}
+          <a href="{{ alt_href | relative_url }}">EN</a>
+        {% else %}
+          {% assign alt_path = current_url | replace_first: '/en', '' %}
+          {% assign alt_href = '/de' | append: alt_path %}
+          <a href="{{ alt_href | relative_url }}">DE</a>
+        {% endif %}
+      </div>
+    </div>
 
     <nav>
       {% if page.language == "de" %}
@@ -49,7 +72,8 @@
   </main>
 
   <footer class="site-footer">
-    <p>Building Artificial Minds</p>
+    <p>{{ site.footer_text }}</p>
+    <p>{{ site.copyright }}</p>
   </footer>
 
 </body>
