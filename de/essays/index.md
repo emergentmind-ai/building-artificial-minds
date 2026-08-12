@@ -6,4 +6,4 @@ language: de
 
 # Essays
 
-- [Die Evolution des Verstehens]({{ '/de/essays/die-evolution-des-verstehens/' | relative_url }})
+- [Die Evolution des Verstehens]({{ '/de/essays/the-evolution-of-understanding/' | relative_url }})

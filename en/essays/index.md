@@ -6,4 +6,4 @@ language: en
 
 # Essays
 
-Comming soon.
+- [The Evolution of Understanding]({{ '/en/essays/the-evolution-of-understanding/' | relative_url }})

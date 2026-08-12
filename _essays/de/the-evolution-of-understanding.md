@@ -3,7 +3,7 @@ layout: essay
 title: "Die Evolution des Verstehens"
 subtitle: Und warum künstliche Intelligenz mehr als Lernen braucht
 language: de
-permalink: /de/essays/die-evolution-des-verstehens/
+permalink: /de/essays/the-evolution-of-understanding/
 ---
 
 
