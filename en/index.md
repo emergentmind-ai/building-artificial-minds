@@ -11,5 +11,7 @@ Artificial intelligence is one of the most ambitious technological endeavors of 
 
 **Do we already understand how intelligence emerges—or are we merely building systems that reproduce individual aspects of intelligent behavior?**
 
+<!-- 
 - [Essays]({{ '/en/essays/' | relative_url }})
 - [Books]({{ '/en/books/' | relative_url }})
+-->

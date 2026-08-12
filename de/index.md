@@ -11,6 +11,7 @@ Künstliche Intelligenz gehört zu den ambitioniertesten technologischen Projekt
 
 **Verstehen wir bereits, wie Intelligenz entsteht – oder bauen wir lediglich Systeme, die einzelne Aspekte intelligenten Verhaltens nachbilden?**
 
-
+<!-- 
 - [Essays]({{ '/de/essays/' | relative_url }})
 - [Bücher]({{ '/de/books/' | relative_url }})
+-->
