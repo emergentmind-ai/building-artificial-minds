@@ -1,6 +1,8 @@
 collections:
   essays:
     output: true
+  books:
+    output: true
 
 author: "Andrea Glende"
 copyright: "© 2026 Andrea Glende. All rights reserved."

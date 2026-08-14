@@ -24,6 +24,9 @@ Jeder Band behandelt einen anderen Aspekt der Frage, wie Intelligenz entsteht un
 
 Evolution ist der einzige bekannte Prozess, der nachweislich intelligente Systeme hervorgebracht hat. Dieser Band untersucht, welche Prinzipien der Evolution sich auf künstliche Systeme übertragen lassen und wie Lernen, Anpassung und Kreativität aus evolutionären Mechanismen entstehen.
 
+[Mehr über das Buch]({{ '/de/books/evolutionary-theories-for-ai/' | relative_url }})
+
+
 
 #### Band2: Swarm Intelligence for AI
 

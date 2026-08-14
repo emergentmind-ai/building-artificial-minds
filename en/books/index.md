@@ -14,7 +14,7 @@ permalink: /en/books/
 
 Four perspectives on emergence, one common framework: This series explores how intelligence emerges.
 
-Each volume approaches a different aspect of the question of how intelligence emerges—and how it might be artificially created:
+Each volume approaches a diffserent aspect of the question of how intelligence emerges—and how it might be artificially created:
 
 
 #### Volume 1: Evolutionary Theories for AI
@@ -22,6 +22,8 @@ Each volume approaches a different aspect of the question of how intelligence em
 *How do new capabilities emerge?*
 
 Evolution is the only known process that has demonstrably produced intelligent systems. This volume examines which principles of evolution can be transferred to artificial systems and how learning, adaptation, and creativity can emerge from evolutionary mechanisms.
+
+[About the Book]({{ '/en/books/evolutionary-theories-for-ai/' | relative_url }})
 
 
 #### Volume 2: Swarm Intelligence for AI
