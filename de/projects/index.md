@@ -40,7 +40,7 @@ Der aktuelle Ansatz trennt daher das gelernte Netzwerk von der Identität der ei
 Erhalten werden muss daher nicht die Identität oder Position einzelner Protozoen, sondern die aufgabenspezifische Organisation des Netzwerks. Wenn die Aufgabe erneut auftritt, muss diese Organisation auf die neu gebildete physische Struktur übertragen werden, selbst wenn sich deren Geometrie und die daran beteiligten Individuen von der vorherigen Struktur unterscheiden.
 
 
-# Intelligenz eingebettet in Morphologie
+### Intelligenz eingebettet in Morphologie
 
 Das neuronale Netzwerk ist nur ein Teil des Systems. Seine Ausgaben müssen letztlich die physische Struktur des Schwarms beeinflussen.
 
