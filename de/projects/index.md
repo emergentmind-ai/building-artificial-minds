@@ -7,4 +7,93 @@ permalink: /de/projects/
 
 # Projekte
 
-Hier findest du laufende Arbeiten, Konzepte und Ideen aus der Welt des Verstehens und der künstlichen Intelligenz.
+## SwarmMind
+
+SwarmMind ist ein Simulationsprojekt, das untersucht, wie sich ein Schwarm einfacher, autonomer Agenten zu einem temporären intelligenten System organisieren kann, das in der Lage ist, zu lernen und aufgabenspezifisches Verhalten auszuführen.
+
+Die zentrale Idee besteht darin, Intelligenz nicht als etwas zu betrachten, das innerhalb eines einzelnen künstlichen Agenten implementiert werden muss, sondern als etwas, das aus der Organisation und Interaktion vieler einfacher Agenten entstehen kann. Jedes einzelne Protozoon in SwarmMind verfügt nur über begrenzte Fähigkeiten. Es kann Aspekte seiner lokalen Umgebung wahrnehmen, mit benachbarten Agenten kommunizieren, physische Verbindungen herstellen und sein Verhalten verändern. Intelligenz entsteht, wenn sich diese Agenten zu größeren funktionalen Strukturen organisieren.
+
+Daraus ergibt sich eine grundlegende Frage: **Wie kann ein Schwarm individuell begrenzter Agenten die für eine bestimmte Aufgabe erforderliche kognitive Struktur und physische Organisation bilden – und diese Organisation sowie das dabei Gelernte anschließend reproduzieren, wenn dieselbe Aufgabe erneut auftritt?**
+
+
+### Vom Schwarm zur intelligenten Struktur
+
+Ein Schwarm existiert zunächst als Ansammlung unabhängiger Protozoen ohne vorgegebene Organisation. Sobald eine Aufgabe gestellt wird, lenken Signale aus der Umwelt den Schwarm in Richtung einer für diese Aufgabe geeigneten Struktur. Aufgabenspezifische Pheromone liefern räumliche Informationen, anhand derer die einzelnen Protozoen erkennen können, wo sie sich positionieren und wie sich die Gesamtstruktur bilden soll.
+
+Die entstehende Struktur ist nicht nur eine physische Anordnung. Sie bildet zugleich ein eingebettetes kognitives Netzwerk. Protozoen, die unterschiedliche Positionen innerhalb der Struktur einnehmen, übernehmen unterschiedliche funktionale Rollen und bilden Eingabe-, Verarbeitungs- und Ausgabeschichten. Verbindungen zwischen benachbarten Protozoen werden zu gewichteten Kommunikationswegen, über die sich sensorische Informationen durch die Struktur ausbreiten und letztlich koordinierte Aktionen hervorrufen können.
+
+Die physische Struktur erfüllt damit gleichzeitig zwei Funktionen. Sie stellt die für die Ausführung der Aufgabe erforderliche mechanische Organisation bereit und bildet zugleich die räumliche Topologie, innerhalb derer das kognitive Netzwerk des Schwarms operiert.
+
+Dies stellt einen grundlegenden Unterschied zu einem konventionellen künstlichen neuronalen Netzwerk dar. Ein konventionelles neuronales Netzwerk wird normalerweise zunächst als abstrakte kognitive Struktur definiert und anschließend auf einer festen Hardware ausgeführt. In SwarmMind ist die kognitive Struktur selbst in einer Population physischer Agenten eingebettet. Das Netzwerk muss sich zunächst innerhalb des Schwarms selbst organisieren, und die Agenten, die das Netzwerk bilden, können sich anschließend voneinander lösen und neu organisieren.
+
+
+### Temporäre neuronale Netzwerke
+
+Eine der zentralen Herausforderungen von SwarmMind besteht darin, dass das neuronale Netzwerk nicht dauerhaft existiert.
+
+Die Protozoen sind keine feststehenden Neuronen, die dauerhafte Positionen einnehmen. Sie sind unabhängige Agenten, die zu unterschiedlichen Zeitpunkten an verschiedenen Strukturen beteiligt sein können. Sobald eine Aufgabe abgeschlossen ist, kann sich die Struktur auflösen und die Protozoen in den Schwarm zurückkehren. Wird dieselbe Aufgabe erneut gestellt, muss eine neue Struktur gebildet werden.
+
+Daraus ergibt sich für SwarmMind die Notwendigkeit eines Mechanismus, der das von einer aufgabenspezifischen Struktur erworbene Wissen bewahrt, nachdem sich diese Struktur aufgelöst hat, sodass sie bei einem erneuten Auftreten der Aufgabe innerhalb einer neu gebildeten Struktur rekonstruiert werden kann.
+
+Der aktuelle Ansatz trennt daher das gelernte Netzwerk von der Identität der einzelnen Agenten. Sobald sich eine aufgabenspezifische Struktur bildet, bestimmt ein verteilter Mechanismus die funktionalen Rollen der Protozoen und überträgt die zuvor gelernten Verbindungsgewichte durch die neu gebildete Struktur. Ein als zentral identifiziertes Protozoon dient dabei als Ausgangspunkt für diese Weitergabe und ermöglicht es, das Netzwerk von innen nach außen zu rekonstruieren, ohne dass die neu gebildete Struktur exakt die Geometrie einer früheren Struktur reproduzieren muss.
+
+Erhalten werden muss daher nicht die Identität oder Position einzelner Protozoen, sondern die aufgabenspezifische Organisation des Netzwerks. Wenn die Aufgabe erneut auftritt, muss diese Organisation auf die neu gebildete physische Struktur übertragen werden, selbst wenn sich deren Geometrie und die daran beteiligten Individuen von der vorherigen Struktur unterscheiden.
+
+
+# Intelligenz eingebettet in Morphologie
+
+Das neuronale Netzwerk ist nur ein Teil des Systems. Seine Ausgaben müssen letztlich die physische Struktur des Schwarms beeinflussen.
+
+Die aktuelle Fallstudie untersucht beispielsweise eine von Quallen inspirierte Fortbewegung. Protozoen am äußeren Rand der Struktur stehen in direkter Wechselwirkung mit der Umwelt. Die Protozoen im sensorischen Bereich nehmen relevante Zustände ihrer unmittelbaren Umgebung wahr, wie zum Beispiel Pheromonkonzentrationen. Diese Informationen gelangen in das interne neuronale Netzwerk, werden durch die verborgenen Schichten verarbeitet und erreichen schließlich die Ausgabeprotozoen auf der gegenüberliegenden Seite der Struktur.
+
+
+Die Ausgabeprotozoen fungieren als Aktuatoren. Ihre koordinierte Aktivität erzeugt über die miteinander verbundenen Strukturen Kräfte, die eine Verformung und koordinierte Bewegung der Struktur bewirken und den quallenähnlichen Schwarm dadurch durch die umgebende Flüssigkeit antreiben.
+
+Die Morphologie des Schwarms ist somit Teil des kognitiven Systems. Die Anordnung der Agenten bestimmt, welche Agenten miteinander kommunizieren können, welche Agenten die Umwelt wahrnehmen und welche Agenten physisch auf sie einwirken können. Umgekehrt verändert das vom neuronalen Netzwerk erzeugte Verhalten den physischen Zustand des Schwarms und seiner Umwelt.
+
+Dadurch entsteht eine Rückkopplungsschleife zwischen Kognition, Morphologie und Umwelt.
+
+
+### Von der Qualle zur aufgabenspezifischen Morphologie
+
+Die quallenähnliche Struktur wird bewusst als konkrete Fallstudie verwendet und nicht als das eigentliche Ziel von SwarmMind.
+
+Das übergeordnete Ziel besteht darin zu untersuchen, ob dieselben Prinzipien auch unterschiedliche aufgabenspezifische Strukturen ermöglichen können. Eine Aufgabe, die Fortbewegung erfordert, könnte eine kompakte, koordinierte Struktur hervorbringen. Eine Aufgabe, bei der ein Objekt gegriffen werden muss, könnte längliche oder tentakelartige Ausformungen hervorbringen. Andere Aufgaben könnten wiederum andere räumliche Organisationen und unterschiedliche interne kognitive Netzwerke erfordern.
+
+Der Schwarm sollte daher nicht als ein feststehender Organismus mit einem vorgegebenen Körperbau verstanden werden. Stattdessen sollte seine Morphologie aus der Aufgabe hervorgehen, die er erfüllen soll.
+
+Dies führt zu einem grundlegenden Konzept von SwarmMind: **Die physische Struktur des intelligenten Systems ist selbst anpassungsfähig.**
+
+
+### Schwarm und Gehirn
+
+Diese Perspektive eröffnet auch eine andere Sichtweise auf das Verhältnis zwischen Schwarmintelligenz und individueller Intelligenz.
+
+Ein Gehirn ist keine unteilbare kognitive Einheit. Seine Intelligenz entsteht aus einer großen Population relativ einfacher Zellen, deren Interaktionen komplexe, verteilte Netzwerke bilden. Einzelne Neuronen verfügen nicht über die Intelligenz des Organismus. Intelligenz entsteht aus ihrer Organisation und Interaktion.
+
+Ein Schwarm lässt sich auf ähnliche Weise betrachten. Seine einzelnen Protozoen müssen für sich genommen nicht intelligent sein. Stattdessen kann Intelligenz aus der temporären Organisation vieler Agenten zu funktionalen Netzwerken entstehen.
+
+Der entscheidende Unterschied liegt in der Beständigkeit der Verbindungen. Neuronale Netzwerke in biologischen Gehirnen besitzen relativ stabile physische Strukturen, während ein Schwarm seine Verbindungen kontinuierlich auflösen und neu bilden kann.
+
+Damit verschiebt sich die zentrale Frage von der Frage, **ob ein verteiltes System intelligent sein kann**, hin zu einem spezifischeren Problem:
+
+**Wie können die im Schwarm entstehende Intelligenz und das erworbene Wissen erhalten bleiben, wenn sich das physische Netzwerk, das sie implementiert, ständig verändert?**
+
+SwarmMind untersucht diese Frage, indem es Strukturbildung, die Bildung neuronaler Netzwerke, Lernen, Gedächtnis und physische Interaktion als Bestandteile desselben Systems betrachtet und nicht als voneinander getrennte Mechanismen.
+
+
+### Eine Simulation zur Untersuchung der Mechanismen
+
+SwarmMind ist in erster Linie als experimentelles Simulationsframework zur Untersuchung dieser Mechanismen konzipiert.
+
+Die aktuelle Fallstudie mit der quallenähnlichen Struktur bietet eine kontrollierte Umgebung, in der der vollständige Prozess untersucht werden kann: Ein loser Schwarm empfängt ein aufgabenspezifisches Signal, bildet eine für die Aufgabe geeignete Struktur, etabliert ein internes neuronales Netzwerk, weist funktionale Rollen zu, wendet Verbindungsgewichte an oder erlernt diese, interagiert mit seiner Umwelt, führt die Aufgabe aus und löst sich schließlich wieder auf. Wenn dieselbe Aufgabe erneut auftritt, sollte der Schwarm in der Lage sein, die erforderliche Organisation zu rekonstruieren und das zuvor erworbene Wissen wiederzuverwenden.
+
+Die Umgebung stellt dabei die physikalischen Bedingungen für die jeweiligen Aufgaben bereit. Dazu gehören insbesondere ein flüssiges Medium für die Fortbewegung der Protozoen und des Schwarms, die Ausbreitung von Pheromonen sowie statische und dynamische Objekte, mit denen der Schwarm interagieren kann.
+
+Ziel dieses Ansatzes ist es nicht, einen biologischen Organismus in allen Einzelheiten nachzubilden. Stattdessen dienen biologische Prinzipien wie Schwarmorganisation, Umweltsignale, physische Konnektivität, verteilte Informationsverarbeitung und adaptive Morphologie als Grundlage für Mechanismen, aus denen ein künstliches System entwickelt werden kann.
+
+SwarmMind untersucht damit eine übergeordnete Frage:
+
+**Kann eine Ansammlung einfacher Agenten zu einem intelligenten System werden, indem sie sich dynamisch zu der für die jeweilige Aufgabe erforderlichen kognitiven und physischen Struktur organisiert?**
+
+
