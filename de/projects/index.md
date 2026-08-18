@@ -75,7 +75,7 @@ Ein Schwarm lässt sich auf ähnliche Weise betrachten. Seine einzelnen Protozoe
 
 Der entscheidende Unterschied liegt in der Beständigkeit der Verbindungen. Neuronale Netzwerke in biologischen Gehirnen besitzen relativ stabile physische Strukturen, während ein Schwarm seine Verbindungen kontinuierlich auflösen und neu bilden kann.
 
-Damit verschiebt sich die zentrale Frage von der Frage, **ob ein verteiltes System intelligent sein kann**, hin zu einem spezifischeren Problem:
+Damit verschiebt sich die zentrale Frage von der Frage, ob ein verteiltes System intelligent sein kann, hin zu einem spezifischeren Problem:
 
 **Wie können die im Schwarm entstehende Intelligenz und das erworbene Wissen erhalten bleiben, wenn sich das physische Netzwerk, das sie implementiert, ständig verändert?**
 

@@ -93,7 +93,7 @@ SwarmMind therefore explores a broader question:
 
 **Can a collection of simple agents become an intelligent system by dynamically organizing themselves into the computational and physical structure required for the task at hand?**
 
-
+<!--
 ---
 
 
@@ -103,3 +103,4 @@ There are also three conceptual points I would preserve very carefully in the pr
 1. **The neural network is not the whole intelligence.** It is the computational component of a larger system involving morphology, sensing, actuation and environment.
 2. **The structure is not merely an output of intelligence.** It is also part of the mechanism that makes the intelligence possible. The topology determines communication, sensing and action.
 3. **The real research problem is transient intelligence.** The interesting question is not simply whether a swarm can learn, but whether it can **reconstruct a functional organization after its previous physical organization has disappeared**.
+-->
