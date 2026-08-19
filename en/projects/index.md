@@ -13,7 +13,7 @@ SwarmMind is a simulation project exploring how a swarm of simple, autonomous ag
 
 The central idea is to treat intelligence not as something that has to be implemented inside a single artificial agent, but as something that can emerge from the organization and interaction of many simple agents. Each individual protozoan in SwarmMind has only limited capabilities. It can perceive aspects of its local environment, communicate with nearby agents, establish physical connections, and modify its behavior. Intelligence emerges when these agents organize themselves into larger functional structures.
 
-This raises a fundamental question: **How can a swarm of individually limited agents form the computational and physical organization required to perform a specific task—and subsequently reproduce that organization and what it has learned when the task occurs again?**
+This raises a fundamental question: **How can a swarm of individually limited agents form the computational and physical organization required to perform a specific task — and subsequently reproduce that organization and retain what it has learned when the task occurs again**
 
 
 ### From swarm to intelligent structure
@@ -55,9 +55,9 @@ This creates a feedback loop between computation, morphology, and environment.
 
 ### From a jellyfish to task-specific morphology
 
-The jellyfish structure is deliberately used as a concrete case study rather than as the final objective of SwarmMind.
+The jellyfish structure is deliberately used as a concrete case study rather than as the goal of SwarmMind.
 
-The broader goal is to investigate whether the same principles can support different task-specific structures. A task requiring locomotion might produce a compact, coordinated structure. A task requiring reaching might produce elongated or tentacle-like extensions. Other tasks could require different spatial organizations and different internal computational networks.
+The broader goal is to investigate whether the same principles can support different task-specific structures. A task requiring locomotion might produce a compact, coordinated structure. A task involving the grasping of an object might produce elongated or tentacle-like extensions. Other tasks could require different spatial organizations and different internal computational networks.
 
 The swarm should therefore not be understood as a fixed organism with a predefined body plan. Instead, its morphology should emerge from the task it is required to perform.
 
@@ -76,9 +76,9 @@ The important difference is the persistence of the connections. Neural networks 
 
 This shifts the central question from whether a distributed system can be intelligent to a more specific problem:
 
-**How can useful intelligence persist when the physical network that implements it is constantly changing?**
+**How can the intelligence emerging within the swarm and the knowledge it acquires persist when the physical network that implements them is constantly changing?**
 
-SwarmMind investigates this question by treating structure formation, neural-network formation, learning, memory, and physical action as parts of the same system rather than as separate mechanisms.
+SwarmMind investigates this question by treating structure formation, neural-network formation, learning, memory, and physical interaction as parts of the same system rather than as separate mechanisms.
 
 
 ### A simulation for exploring the mechanisms
@@ -87,20 +87,12 @@ SwarmMind is intended primarily as an experimental simulation framework for inve
 
 The current jellyfish case study provides a controlled environment in which the complete process can be explored: a loose swarm receives a task-specific signal, forms a task-appropriate structure, establishes an internal neural network, assigns functional roles, applies or learns connection weights, interacts with its environment, performs the task, and eventually dissolves. When the task occurs again, the swarm should be able to reconstruct the required organization and reuse what it has previously learned.
 
+The environment provides the physical conditions required for the respective tasks. These include, in particular, a fluid medium for the movement of the protozoa and the swarm, the propagation of pheromones, as well as static and dynamic objects with which the swarm can interact.
+
 The purpose of this approach is not to reproduce a biological organism in every detail. Instead, biological principles such as swarm organization, environmental signaling, physical connectivity, distributed computation, and adaptive morphology provide mechanisms from which an artificial system can be constructed.
 
 SwarmMind therefore explores a broader question:
 
 **Can a collection of simple agents become an intelligent system by dynamically organizing themselves into the computational and physical structure required for the task at hand?**
 
-<!--
----
 
-
-
-There are also three conceptual points I would preserve very carefully in the project going forward:
-
-1. **The neural network is not the whole intelligence.** It is the computational component of a larger system involving morphology, sensing, actuation and environment.
-2. **The structure is not merely an output of intelligence.** It is also part of the mechanism that makes the intelligence possible. The topology determines communication, sensing and action.
-3. **The real research problem is transient intelligence.** The interesting question is not simply whether a swarm can learn, but whether it can **reconstruct a functional organization after its previous physical organization has disappeared**.
--->
