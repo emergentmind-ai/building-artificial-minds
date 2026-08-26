@@ -45,10 +45,10 @@ header.site-header {
 }
 
 .site-logo {
-    width: 20px !important;
-    height: 20px !important;
-    max-width: 20px;
-    max-height: 20px;
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px;
+    max-height: 40px;
     object-fit: contain;
     display: block;
     flex-shrink: 0;
