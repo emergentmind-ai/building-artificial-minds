@@ -21,8 +21,9 @@
   <header class="site-header">
 
     <div class="header-top-row">
-      <a class="site-title" href="{{ '/' | relative_url }}">
-        Building Artificial Minds
+      <a class="site-brand" href="{{ '/' | relative_url }}">
+        <img src="{{ '/assets/building-artificial-minds.png' | relative_url }}" alt="Building Artificial Minds logo" class="site-logo">
+        <span class="site-title">Building Artificial Minds</span>
       </a>
       <div class="lang-switcher">
         {% assign current_url = page.url | replace: '/index.html', '' %}
